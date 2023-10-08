@@ -44,6 +44,8 @@ function validateDate(selectedDate) {
   return true;
 }
 
+startButton.disabled = true;
+
 function onDateSelected(selectedDates) {
   const selectedDate = new Date(selectedDates[0]);
   if (validateDate(selectedDate)) {
